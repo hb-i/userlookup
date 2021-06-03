@@ -1,0 +1,9 @@
+click
+colorama
+Flask
+itsdangerous
+Jinja2
+ldap3
+MarkupSafe
+pyasn1
+Werkzeug

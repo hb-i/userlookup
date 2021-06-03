@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <style>
+         #mytable {
+         font-family: Arial, Helvetica, sans-serif;
+         border-collapse: collapse;
+         width: 100%;
+         }
+         #mytable td, #mytable th {
+         border: 1px solid #ddd;
+         padding: 8px;
+         }
+         #mytable tr:nth-child(even){background-color: #f2f2f2;}
+         #mytable tr:hover {background-color: #ddd;}
+         #mytable th {
+         padding-top: 12px;
+         padding-bottom: 12px;
+         text-align: left;
+         background-color: #04AA6D;
+         color: white;
+         }
+         body {
+         font-family: Arial, sans-serif;
+         }
+      </style>
+   </head>
+   <body>
+      <h1><strong>Here are your logins</strong></h1>
+      <table id="mytable">
+         <tbody>
+            <tr>
+               <td>
+                  <h3><strong>Windows Login</strong></h3>
+				  <img src="{{url_for('static', filename='windows.png')}}" alt="Windows Logo" width="50px" height="50px"/>
+               </td>
+               <td style="padding:10px">
+                  <h3>{{ username }}</h3>
+               </td>
+            </tr>
+            <tr>
+               <td>
+                  <h3><strong>Email Address</strong></h3>
+				  <img src="{{url_for('static', filename='email.png')}}" alt="Email Logo" width="50px" height="50px"/>
+               </td>
+               <td style="padding:10px">
+                  <h3>{{ email }}</h3>
+               </td>
+            </tr>
+         </tbody>
+      </table>
+   </body>
+</html>
